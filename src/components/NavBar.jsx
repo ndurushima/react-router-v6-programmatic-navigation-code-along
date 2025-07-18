@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom"
 import "./NavBar.css"
 
-function NavBar() {
+// destructure logout from props object
+function NavBar({ logout }) {
 
   return (
     <nav>
