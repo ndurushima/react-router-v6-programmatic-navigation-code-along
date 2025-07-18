@@ -17,6 +17,8 @@ function NavBar() {
       >
         About
       </NavLink>
+      {/* Add a button with the logout function to handle the onClick event */}
+      <button onClick={logout}>Logout</button>
     </nav>
   )
 }
