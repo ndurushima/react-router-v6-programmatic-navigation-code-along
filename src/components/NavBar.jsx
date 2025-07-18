@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom"
 import "./NavBar.css"
 
-function NavBar() {
+// destructure logout from props object
+function NavBar({ logout }) {
 
   return (
     <nav>
@@ -17,6 +18,8 @@ function NavBar() {
       >
         About
       </NavLink>
+      {/* Add a button with the logout function to handle the onClick event */}
+      <button onClick={logout}>Logout</button>
     </nav>
   )
 }
